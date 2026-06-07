@@ -1,0 +1,76 @@
+# ---------------------------------------------------------------------------
+# Dependencies
+# ---------------------------------------------------------------------------
+node_modules/
+.pnp/
+.pnp.js
+.yarn/
+jspm_packages/
+
+# ---------------------------------------------------------------------------
+# Build output / compiled artifacts
+# ---------------------------------------------------------------------------
+dist/
+build/
+out/
+*.tsbuildinfo
+
+# Azure Functions (TypeScript) compiled output and tooling dirs
+bin/
+obj/
+
+# Vite
+.vite/
+
+# ---------------------------------------------------------------------------
+# Environment & secrets (never commit real credentials)
+# ---------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+
+# Azure Functions local settings (contains the function key / connection strings)
+local.settings.json
+
+# Azure / cloud credential artifacts
+*.publishsettings
+*.azureauth
+.azure/
+
+# Generic secret material
+*.pem
+*.key
+*.pfx
+*.p12
+
+# ---------------------------------------------------------------------------
+# Test / coverage output
+# ---------------------------------------------------------------------------
+coverage/
+*.lcov
+.nyc_output/
+.vitest/
+
+# ---------------------------------------------------------------------------
+# Logs & diagnostics
+# ---------------------------------------------------------------------------
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ---------------------------------------------------------------------------
+# Editor / IDE
+# ---------------------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ---------------------------------------------------------------------------
+# OS files
+# ---------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+Desktop.ini

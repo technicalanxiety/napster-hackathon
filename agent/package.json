@@ -1,0 +1,24 @@
+{
+  "name": "azure-governance-advisor-agent",
+  "version": "1.0.0",
+  "description": "Napster Omniagent assembly script for the Azure Governance Baseline Advisor (Morgan Cole)",
+  "private": true,
+  "main": "dist/assemble.js",
+  "engines": {
+    "node": ">=20.0.0 <21.0.0"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "assemble": "tsc && node dist/assemble.js",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.0",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.9.0",
+    "vitest": "^4.1.8"
+  }
+}
