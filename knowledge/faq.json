@@ -1,0 +1,20 @@
+{
+  "faqs": [
+    {
+      "question": "What is Azure Policy?",
+      "answer": "Azure Policy is a governance service in Azure that lets you create, assign, and manage policies that enforce rules and effects over your resources. Each policy evaluates resources against business rules expressed as JSON definitions, then reports whether each resource is compliant or non-compliant. Policies can audit existing resources, block non-compliant deployments, or automatically remediate resources, giving you a consistent way to keep an environment aligned with organizational standards at scale."
+    },
+    {
+      "question": "What is a policy baseline?",
+      "answer": "A policy baseline is a curated set of policies, usually grouped into an initiative, that defines the minimum security and governance standard every resource in an environment is expected to meet. Rather than evaluating one rule at a time, a baseline like the Azure Security Benchmark bundles dozens of related controls across networking, storage, identity, compute, and logging so you can assess overall posture against a single, well-understood reference. It answers the question \"is this environment configured the way we agreed it should be?\""
+    },
+    {
+      "question": "How often does Azure evaluate compliance?",
+      "answer": "Azure Policy evaluates compliance on a recurring cycle of roughly every 24 hours for existing resources, and it also evaluates within minutes whenever a resource is created or updated or a policy assignment changes. Because that scheduled cycle can lag, you can trigger an on-demand evaluation scan (for example with 'az policy state trigger-scan') to refresh compliance state immediately; an on-demand scan typically takes 15 to 30 minutes to complete depending on the number of resources in scope."
+    },
+    {
+      "question": "What is the difference between audit and deny mode?",
+      "answer": "Audit and deny are two policy effects that differ in how strictly they enforce a rule. Audit mode is non-blocking: it allows a non-compliant resource to be created or to keep running but records it as non-compliant so you gain visibility without disrupting workloads. Deny mode is blocking: it stops a non-compliant resource from being created or updated at deployment time, preventing the violation from ever entering the environment. Audit is well suited to assessing posture and onboarding existing resources, while deny is used to hard-enforce critical guardrails."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "azure-governance-advisor-knowledge",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Governance knowledge base + FAQ content and content-validation tests",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "vitest": "^2.1.8"
+  }
+}

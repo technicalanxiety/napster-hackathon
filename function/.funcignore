@@ -1,0 +1,12 @@
+*.js.map
+*.ts
+.git*
+.vscode
+local.settings.json
+test
+tsconfig.json
+**/*.test.ts
+node_modules/@types
+node_modules/typescript
+node_modules/vitest
+node_modules/fast-check

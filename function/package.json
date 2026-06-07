@@ -1,0 +1,32 @@
+{
+  "name": "policy-function",
+  "version": "1.0.0",
+  "description": "Azure Function policy-check backend for the Azure Governance Baseline Advisor",
+  "private": true,
+  "main": "dist/src/{index.js,functions/*.js}",
+  "engines": {
+    "node": ">=20.0.0 <21.0.0"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "tsc",
+    "watch": "tsc -w",
+    "prestart": "npm run clean && npm run build",
+    "start": "func start",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@azure/arm-resourcegraph": "^4.2.1",
+    "@azure/functions": "^4.16.0",
+    "@azure/identity": "^4.13.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.0",
+    "fast-check": "^4.8.0",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.9.0",
+    "vitest": "^4.1.8"
+  }
+}
